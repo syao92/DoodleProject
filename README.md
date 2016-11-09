@@ -13,5 +13,9 @@ My Doodle project includes the features:
 To run this program, please download the project from GitHub and run through Android Studio.
 
 Sources:
-Doodle View: https://www.youtube.com/watch?v=ktbYUrlN_Ws
-SeekBar in Android Dialog: http://stackoverflow.com/questions/6424032/android-seekbar-in-dialog
+
+Doodle View: 
+https://www.youtube.com/watch?v=ktbYUrlN_Ws
+
+SeekBar in Android Dialog: 
+http://stackoverflow.com/questions/6424032/android-seekbar-in-dialog
