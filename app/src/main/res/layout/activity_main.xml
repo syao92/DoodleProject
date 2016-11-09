@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.simon.doodleproject.MainActivity">
+
+    <com.example.simon.doodleproject.DoodleView
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/doodle" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Brush Size"
+        android:id="@+id/sizeButton"
+        android:layout_alignBottom="@+id/doodle"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Opacity"
+        android:id="@+id/opacityButton"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Clear"
+        android:id="@+id/clearButton"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/doodle"
+        android:layout_alignEnd="@+id/doodle" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Blue"
+        android:id="@+id/textView3"
+        android:layout_above="@+id/sizeButton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Green"
+        android:id="@+id/textView"
+        android:layout_above="@+id/textView3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="15dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Red"
+        android:id="@+id/textView2"
+        android:layout_above="@+id/textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="15dp" />
+
+    <SeekBar
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/redSeekBar"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_alignRight="@+id/doodle"
+        android:layout_alignEnd="@+id/doodle"
+        android:layout_toRightOf="@+id/sizeButton"
+        android:layout_toEndOf="@+id/sizeButton"
+        android:indeterminate="false" />
+
+    <SeekBar
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/greenSeekBar"
+        android:layout_alignTop="@+id/textView"
+        android:layout_alignLeft="@+id/redSeekBar"
+        android:layout_alignStart="@+id/redSeekBar"
+        android:indeterminate="false" />
+
+    <SeekBar
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/blueSeekBar"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignLeft="@+id/greenSeekBar"
+        android:layout_alignStart="@+id/greenSeekBar"
+        android:indeterminate="false" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:maxWidth="50dp"
+        android:maxHeight="50dp"
+        android:scaleType="fitCenter"
+        android:layout_marginLeft="3dp"
+        android:src="@drawable/undo"
+        android:id="@+id/undoButton" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:maxWidth="50dp"
+        android:maxHeight="50dp"
+        android:scaleType="fitCenter"
+        android:layout_marginLeft="55dp"
+        android:src="@drawable/redo"
+        android:id="@+id/redoButton" />
+
+
+</RelativeLayout>
