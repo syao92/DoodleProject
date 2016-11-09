@@ -1,2 +1,3 @@
 # DoodleProject
-CMSC 434 Doodle
+CMSC 434 Doodle Project
+
